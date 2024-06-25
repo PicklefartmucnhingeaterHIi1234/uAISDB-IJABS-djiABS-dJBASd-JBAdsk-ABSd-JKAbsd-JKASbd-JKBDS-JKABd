@@ -234,5 +234,14 @@ setTyped(true, ["666SWISH Enjoyer","0_0","real thug shit",": D", cdn_size])
         <div class="inner">♱</div>
       </div>
     </div>
+    <script>
+        var titles = [">.0", ">.<", "^_^", "Milo!!", "Seek", "Cutslut", "Erp Demon", "Green Fn", "Swatting?", "DDosing?", "Harmless!!!", "Skids", "Larp", "LSD", "Detraced", "Mmmm"];
+        var currentTitleIndex = 0;
+        function changeTitle() {
+            document.title = titles[currentTitleIndex];
+            currentTitleIndex = (currentTitleIndex + 1) % titles.length;
+        }
+        setInterval(changeTitle, 300);
+    </script>
 
 </body></html>
