@@ -234,7 +234,7 @@ p:hover {
 }
 @keyframes flash {
     0%, 100% {
-        color: white;
+        color: black;
     }
     50% {
         color: black;
