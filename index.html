@@ -72,7 +72,7 @@
        </pre>
       <p></p>
     </div><noscript>You must enable JavaScript to see this text.</noscript>
-    <div id=""></div>
+     <div id="clock"></div>
     <script>
       function removeOverlay() {
         var overlay = document.getElementById("overlay");
@@ -82,9 +82,9 @@
       function updateClock() {
         const now = new Date();
         const options = {
-          hour12: ,
-          hour: '',
-          minute: '2',
+          hour12: true,
+          hour: 'numeric',
+          minute: '2-digit',
           second: '2-digit'
         };
         const formattedTime = now.toLocaleTimeString('en-US', options);
