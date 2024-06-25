@@ -44,73 +44,51 @@
 
     <div class="container">
       <body>
-        <pre>
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀.∥
-　　　　　　　　　 　 .∥
-ㅤㅤ　 　 　　　＿__　　 .∥
-ㅤㅤㅤ　 ／　　　 ｀ヽ ∥
-　　　 ,:'　　　　　　､ゑ
-　　　,'　　 　;　　i　 八､
-　　　|,! 、 ,! | 　,' ,〃ヽ!;､ 　　
-　 　|!| ｌ川 l ﾘへ'==二二ト､ 　
-ㅤㅤ　ﾘ川 !| i′　 ﾞ､　　　　', ', 　
-　　　lﾙl ||,ﾚ′　　 ヽ　　　,ﾉ ,〉　
-ㅤ　 　 |川'、　 ,,.,.r'"　 　 ,,ンﾞ 　
-ㅤㅤㅤ　　　｀T"　 ! ,/ '.ﾉ,/｜　 　
-ㅤㅤㅤㅤ　　 / 　 ,!´　!ﾞヾ{　|
-ㅤ 　ㅤㅤㅤㅤ　/ 　 ,' 　 i　ﾞ　! ,lﾞ
-ㅤㅤ　　,r‐'ヽ-､!　　 ',　　l｜　
-　ㅤ　 {　　　 ｀ヽ　　 !　 ｢ﾞﾌ 　　
-ㅤㅤ　　,>┬―／　　 ;　 i,｀{ 　　
-　　　/ /ﾘ川'　 　 　 　 ', ﾞ､
-　 ／ ,/　　　 　 　 　 　 ﾞ､ ﾞ、 　
-ノ 　/　　　　　　　　　　　', ｀､ 　
-＼_/　　 ;　　　　　　　　　 ﾞ、ヽ、
-　　l__　　 !　　　　　　　 _＿_〕
-ㅤㅤ　 ￣｀‐┬―r┬‐r'´　｀'‐'′
-ㅤㅤ　ㅤㅤㅤ 　　|　　.! |　 |
-ㅤㅤㅤㅤㅤ　ㅤㅤㅤ|　　| .|　 |⠀⠀⠀⠀⠀⠀⠀
-        </pre>
+        <pre>                        
+        =           
+        +           
+        =           
+        +-          
+     ###%##+#*=     
+    #+=++==*#%+     
+   #*=---=-=+=:     
+  ####*++=+=+++     
+  %#####==#+**:     
+   @#%#==-:*++      
+    %#*===+#:.      
+     #%%##+--::::   
+    **#*+=--=+++-   
+    +++=::+-=:--.   
+   *++=::=::---:.   
+   *+++--=:::--:::  
+   *+*+--=--:-=::.  
+   **#+=-==-----:.  
+  %###+====---==:.  
+  %#%@%#*%***%%*-:  
+ %##@@%@%@@@@%##+=  
+ #%#@@%%@@@@%%#%+-: 
+  ###=---++=----=-  
+   #*=--:=+-----+   
+    +=--:-=---:.    
+     +--:-=--::     
+     *--::=--::     
+      *=---==+:     
+     **+=:*+=-:     
+     *+---*=-:=     
+     *+-:-*--:-     
+      +---+-:-:     
+      *--=+-::      
+       +-=+:-       
+      *+==+:-       
+      *++==:::      
+      #**+=:::      
+      ****----      
+       %#*=++       
+                    ⠀⠀⠀⠀⠀⠀⠀
+      </pre>
     </body>
       <p>Eslut.ing</p>
     </div><noscript>You must enable JavaScript to see this text.</noscript>
-    <div id="clock"></div>
-    <script>
-      function removeOverlay() {
-        var overlay = document.getElementById("overlay");
-        overlay.style.display = "none";
-      }
-
-      function updateClock() {
-        const now = new Date();
-        const options = {
-          hour12: true,
-          hour: 'numeric',
-          minute: '2-digit',
-          second: '2-digit'
-        };
-        const formattedTime = now.toLocaleTimeString('en-US', options);
-        document.getElementById('clock').textContent = formattedTime;
-      }
-
-      setInterval(updateClock, 1000);
-
-      function createBloodSparks() {
-        const numSparks = Math.floor(Math.random() * 5) + 1;
-        for (let i = 0; i < numSparks; i++) {
-          const bloodSpark = document.createElement('div');
-          bloodSpark.classList.add('blood-spark');
-          bloodSpark.style.left = `${Math.random() * window.innerWidth}px`;
-          document.body.appendChild(bloodSpark);
-
-          setTimeout(() => {
-            bloodSpark.remove();
-          }, 6000);
-        }
-      }
-
-      setInterval(createBloodSparks, 1000);
-    </script>
     <script>
       function playMusic() {
         var audio = new Audio('esluting.mp3');
